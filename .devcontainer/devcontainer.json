@@ -1,0 +1,19 @@
+{
+    "name": "nix-dev",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "nix-dev",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": "true",
+            "username": "vscode",
+            "userUid": "1000",
+            "userGid": "1000",
+            "upgradePackages": "true"
+        },
+        "ghcr.io/devcontainers/features/nix:1": {
+            "packages": ["valgrind", "bear", "cmake"]
+        }
+    },
+    "remoteUser": "vscode"
+}
