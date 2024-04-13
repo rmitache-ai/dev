@@ -10,10 +10,19 @@
             "userUid": "1000",
             "userGid": "1000",
             "upgradePackages": "true"
-        },
-        "ghcr.io/devcontainers/features/nix:1": {
-            "packages": ["valgrind", "bear", "cmake"]
         }
     },
-    "remoteUser": "vscode"
+    "remoteUser": "vscode",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cmake-tools",
+                "llvm-vs-code-extensions.vscode-clangd",
+                "tomoki1207.pdf",
+                "GitHub.copilot",
+                "GitHub.copilot-chat",
+                "donjayamanne.githistory"
+            ]
+        }
+    }
 }
